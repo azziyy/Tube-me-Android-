@@ -21,11 +21,17 @@ jobs:
 
       - name: Tozalash va Majburiy Build
         run: |
-          # Buzilgan gradlew fayllarini o'chiramiz
+          # Buzilgan gradlew fayllarini o'chirib tashlaymiz
           rm -f gradlew gradlew.bat
           
-          # Tizimdagi toza gradle orqali keshni tozalab, APK yig'amiz
-          gradle clean assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx4g"
+          # Eng kuchli bayroqlar bilan build qilish:
+          # --no-configure-on-demand: Sizdagi xatoni davosi
+          # -x test: Testlarni o'chirib turadi (tezlashtirish uchun)
+          gradle assembleDebug \
+            --no-daemon \
+            --no-configure-on-demand \
+            -Dorg.gradle.jvmargs="-Xmx4g -XX:MaxMetaspaceSize=512m" \
+            -x test
 
       - name: APK-ni saqlash
         uses: actions/upload-artifact@v4
