@@ -12,20 +12,21 @@ jobs:
       - name: Kodni yuklab olish
         uses: actions/checkout@v4
 
-      - name: JDK 17-ni sozlama
+      - name: JDK 17-ni sozlash
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
 
-      - name: Gradlew-ga ruxsat berish
-        run: chmod +x gradlew
-
-      - name: APK-ni yig'ish
-        # Bu yerda biz xotirani majburan 2GB qilib ko'rsatamiz
-        run: ./gradlew assembleDebug -Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxMetaspaceSize=512m"
-
+      - name: Xato fayllarni tozalash va yangi Gradle ishlatish
+        # Bu qadam loyihangiz ichidagi noto'g'ri gradlew faylini o'chiradi 
+        # va GitHub-dagi toza gradle'dan foydalanadi
+        run: |
+          rm -f gradlew
+          rm -f gradlew.bat
+          gradle assembleDebug
+          
       - name: APK-ni saqlash
         uses: actions/upload-artifact@v4
         with:
