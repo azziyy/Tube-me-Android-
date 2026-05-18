@@ -19,13 +19,12 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Xato fayllarni tozalash va yangi Gradle ishlatish
-        # Bu qadam loyihangiz ichidagi noto'g'ri gradlew faylini o'chiradi 
-        # va GitHub-dagi toza gradle'dan foydalanadi
+      - name: Xato fayllarni tozalash va kuchaytirilgan Build
         run: |
           rm -f gradlew
           rm -f gradlew.bat
-          gradle assembleDebug
+          # Bu buyruq xotirani maksimal darajada boshqaradi
+          gradle assembleDebug -Dorg.gradle.jvmargs="-Xmx4g -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" --no-daemon
           
       - name: APK-ni saqlash
         uses: actions/upload-artifact@v4
