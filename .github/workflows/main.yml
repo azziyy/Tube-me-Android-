@@ -19,16 +19,16 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Xato fayllarni tozalash va kuchaytirilgan Build
+      - name: Majburiy toza build
+        # Bu qadam buzilgan fayllarni o'chirib, xatolarni chetlab o'tadi
         run: |
           rm -f gradlew
           rm -f gradlew.bat
-          # Bu buyruq xotirani maksimal darajada boshqaradi
-          gradle assembleDebug -Dorg.gradle.jvmargs="-Xmx4g -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" --no-daemon
-          
+          gradle assembleDebug --no-daemon --no-configure-on-demand -Dorg.gradle.jvmargs="-Xmx4g -Dfile.encoding=UTF-8"
+
       - name: APK-ni saqlash
         uses: actions/upload-artifact@v4
         with:
-          name: TubeMe-Build-APK
+          name: TubeMe-Tayyor-APK
           path: app/build/outputs/apk/debug/*.apk
           
