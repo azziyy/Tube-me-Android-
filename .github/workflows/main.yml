@@ -19,20 +19,16 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
-      - name: Majburiy Build (Xatolarni chetlab o'tish)
-        run: |
-          rm -f gradlew gradlew.bat
-          # Bu yerda biz Gradle-ga keshdan foydalanmaslikni va 
-          # xatolarga qaramay yig'ishni buyuramiz
-          gradle assembleDebug \
-            --no-daemon \
-            --no-configure-on-demand \
-            -Pandroid.nonTransitiveRClass=false \
-            -Dorg.gradle.jvmargs="-Xmx4g" \
-            -x test
+      - name: Gradlew-ga ruxsat berish
+        run: chmod +x gradlew
 
-      - name: APK-ni saqlash
+      - name: APK-ni yig'ish (Assemble Debug)
+        # Faqat eng zarur buyruqni qoldiramiz
+        run: ./gradlew assembleDebug
+
+      - name: Tayyor APK-ni saqlash
         uses: actions/upload-artifact@v4
         with:
           name: TubeMe-Build
           path: app/build/outputs/apk/debug/*.apk
+          
