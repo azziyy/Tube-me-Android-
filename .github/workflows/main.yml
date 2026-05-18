@@ -2,32 +2,33 @@ name: Android_APK_Yaratish
 
 on:
   push:
-    branches: [ "main" ] # Agar asosiy branchingiz nomi 'master' bo'lsa, buni master qiling
-  workflow_dispatch: # Bu tugma orqali o'zimiz ham ishga tushirishimiz uchun
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Kodni yuklab olish
-      uses: actions/checkout@v4
+      - name: Kodni yuklab olish
+        uses: actions/checkout@v4
 
-    - name: JDK 17-ni sozlash
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
+      - name: JDK 17-ni sozlama
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
 
-    - name: Gradlew-ga ruxsat berish
-      run: chmod +x gradlew
+      - name: Gradlew-ga ruxsat berish
+        run: chmod +x gradlew
 
-    - name: APK-ni yig'ish (Assemble Debug)
-      run: ./gradlew assembleDebug
+      - name: APK-ni yig'ish
+        # Bu yerda biz xotirani majburan 2GB qilib ko'rsatamiz
+        run: ./gradlew assembleDebug -Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxMetaspaceSize=512m"
 
-    - name: Tayyor APK-ni saqlash
-      uses: actions/upload-artifact@v4
-      with:
-        name: Ilova-Debug-APK
-        path: app/build/outputs/apk/debug/*.apk
+      - name: APK-ni saqlash
+        uses: actions/upload-artifact@v4
+        with:
+          name: TubeMe-Build-APK
+          path: app/build/outputs/apk/debug/*.apk
+          
