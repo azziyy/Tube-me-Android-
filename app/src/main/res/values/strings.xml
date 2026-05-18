@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TubeMe</string>
+
+    <!-- Generic -->
+    <string name="retry">Qayta urinish</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="yes">Ha</string>
+    <string name="no">Yo\'q</string>
+    <string name="ok">OK</string>
+    <string name="save">Saqlash</string>
+    <string name="back">Orqaga</string>
+    <string name="see_all">Barchasi</string>
+    <string name="loading">Yuklanmoqda…</string>
+
+    <!-- Header -->
+    <string name="search">Qidiruv</string>
+    <string name="notifications">Bildirishnomalar</string>
+    <string name="profile">Profil</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Bosh sahifa</string>
+    <string name="nav_collections">To\'plamlar</string>
+    <string name="nav_search">Qidiruv</string>
+    <string name="nav_favorites">Sevimlilar</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Home -->
+    <string name="home_continue">Tomosha qilishni davom eting</string>
+    <string name="home_recommended">✨ Siz uchun tavsiya</string>
+    <string name="home_trending">🔥 Trenddagi</string>
+    <string name="hero_featured">Tanlangan</string>
+    <string name="hero_play">Tomosha qilish</string>
+    <string name="hero_info">Ma\'lumot</string>
+    <string name="empty_no_content">Hozircha kontent yo\'q</string>
+    <string name="empty_no_content_sub">Bu yerda ko\'rinishi uchun Google Sheetga video qo\'shing.</string>
+
+    <!-- Collections -->
+    <string name="collections_title">To\'plamlar</string>
+    <string name="collections_empty">Hozircha to\'plamlar yo\'q</string>
+    <string name="collections_empty_sub">Bu yerda ko\'rinishi uchun Google Sheetga to\'plam qo\'shing.</string>
+    <string name="season">Fasl</string>
+    <string name="episodes">qism</string>
+    <string name="no_episodes">Epizodlar yo\'q</string>
+    <string name="no_episodes_sub">Ushbu mavsumda hali videolar yo\'q.</string>
+    <string name="collection_not_found">To\'plam topilmadi</string>
+
+    <!-- Search -->
+    <string name="search_title">Qidiruv</string>
+    <string name="search_placeholder">Filmlar, seriallar, janrlar bo\'yicha qidirish…</string>
+    <string name="trending_searches">🔥 Trenddagi qidiruvlar</string>
+    <string name="no_results">Natija topilmadi</string>
+    <string name="no_results_sub">Boshqa so\'rov yoki filterni sinab ko\'ring.</string>
+    <string name="result_count">{n} ta natija</string>
+
+    <!-- Library -->
+    <string name="library_title">Mening kutubxonam</string>
+    <string name="tab_liked">Yoqtirilgan</string>
+    <string name="tab_saved">Saqlangan</string>
+    <string name="tab_continue">Davom etish</string>
+    <string name="tab_history">Tarix</string>
+    <string name="empty_liked">Yoqtirilgan videolar yo\'q</string>
+    <string name="empty_liked_sub">Bu yerga qo\'shish uchun istalgan videodagi yurakchani bosing.</string>
+    <string name="empty_saved">Saqlangan narsa yo\'q</string>
+    <string name="empty_saved_sub">Keyinroq tomosha qilish uchun videolarni belgilang.</string>
+    <string name="empty_continue">Davom ettiriladigan narsa yo\'q</string>
+    <string name="empty_continue_sub">Tomosha boshlagan videolaringiz shu yerda paydo bo\'ladi.</string>
+    <string name="empty_history">Tarix bo\'sh</string>
+    <string name="empty_history_sub">Siz tomosha qilgan videolar shu yerda ko\'rinadi.</string>
+    <string name="clear_history_confirm">Tomosha tarixini tozalaysizmi?</string>
+    <string name="clear_yes">Ha, hammasini tozalash</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="group_playback">Tomosha</string>
+    <string name="group_app">Ilova</string>
+    <string name="group_storage">Saqlash</string>
+    <string name="group_about">Haqida</string>
+    <string name="streaming_quality">Streaming sifati</string>
+    <string name="playback_speed">Tomosha tezligi</string>
+    <string name="autoplay">Avtomatik o\'ynatish</string>
+    <string name="autoplay_sub">Keyingi epizodni avtomatik o\'ynatish</string>
+    <string name="dark_mode">Tungi rejim</string>
+    <string name="dark_mode_sub">AMOLED qora mavzu</string>
+    <string name="notifications_setting">Bildirishnomalar</string>
+    <string name="notifications_setting_sub">Yangiliklar va yangilanishlar</string>
+    <string name="language">Til</string>
+    <string name="clear_history">Tomosha tarixini tozalash</string>
+    <string name="clear_history_sub">Barcha tarixni o\'chirish</string>
+    <string name="clear_cache">Keshni tozalash</string>
+    <string name="clear_cache_sub">Joyni bo\'shatish</string>
+    <string name="about_app">TubeMe haqida</string>
+    <string name="version">Versiya 1.0.0</string>
+    <string name="footer_made">TubeMe v1.0.0 • Mehr bilan yaratilgan ♥</string>
+    <string name="edit_profile">Profilni tahrirlash</string>
+    <string name="display_name">Ko\'rsatiladigan ism</string>
+    <string name="plan_premium">Premium</string>
+
+    <!-- Video -->
+    <string name="video_not_found">Video topilmadi</string>
+    <string name="more_like_this">Shunga o\'xshash yana</string>
+    <string name="action_like">Yoqtirish</string>
+    <string name="action_save">Saqlash</string>
+    <string name="action_share">Ulashish</string>
+
+    <!-- Notifications -->
+    <string name="no_notifications">Hozircha bildirishnomalar yo\'q.</string>
+    <string name="notifications_title">🔔 Bildirishnomalar</string>
+</resources>

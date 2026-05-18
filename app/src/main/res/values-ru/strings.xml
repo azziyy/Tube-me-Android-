@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TubeMe</string>
+    <string name="retry">Повторить</string>
+    <string name="cancel">Отмена</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ok">OK</string>
+    <string name="save">Сохранить</string>
+    <string name="back">Назад</string>
+    <string name="see_all">Все</string>
+    <string name="loading">Загрузка…</string>
+
+    <string name="search">Поиск</string>
+    <string name="notifications">Уведомления</string>
+    <string name="profile">Профиль</string>
+
+    <string name="nav_home">Главная</string>
+    <string name="nav_collections">Коллекции</string>
+    <string name="nav_search">Поиск</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_profile">Профиль</string>
+
+    <string name="home_continue">Продолжить просмотр</string>
+    <string name="home_recommended">✨ Рекомендовано для вас</string>
+    <string name="home_trending">🔥 В тренде</string>
+    <string name="hero_featured">Рекомендуем</string>
+    <string name="hero_play">Смотреть</string>
+    <string name="hero_info">Подробнее</string>
+    <string name="empty_no_content">Пока нет контента</string>
+    <string name="empty_no_content_sub">Добавьте видео в Google Sheet, чтобы они появились здесь.</string>
+
+    <string name="collections_title">Коллекции</string>
+    <string name="collections_empty">Коллекций пока нет</string>
+    <string name="collections_empty_sub">Добавьте коллекцию в Google Sheet, чтобы она появилась здесь.</string>
+    <string name="season">Сезон</string>
+    <string name="episodes">эп.</string>
+    <string name="no_episodes">Нет эпизодов</string>
+    <string name="no_episodes_sub">В этом сезоне пока нет видео.</string>
+    <string name="collection_not_found">Коллекция не найдена</string>
+
+    <string name="search_title">Поиск</string>
+    <string name="search_placeholder">Поиск фильмов, сериалов, жанров…</string>
+    <string name="trending_searches">🔥 Популярные запросы</string>
+    <string name="no_results">Ничего не найдено</string>
+    <string name="no_results_sub">Попробуйте другой запрос или фильтр.</string>
+    <string name="result_count">{n} результат(ов)</string>
+
+    <string name="library_title">Моя библиотека</string>
+    <string name="tab_liked">Понравилось</string>
+    <string name="tab_saved">Сохранённое</string>
+    <string name="tab_continue">Продолжить</string>
+    <string name="tab_history">История</string>
+    <string name="empty_liked">Нет понравившихся</string>
+    <string name="empty_liked_sub">Нажмите на сердечко, чтобы добавить видео сюда.</string>
+    <string name="empty_saved">Ничего не сохранено</string>
+    <string name="empty_saved_sub">Сохраните видео, чтобы посмотреть позже.</string>
+    <string name="empty_continue">Нечего продолжить</string>
+    <string name="empty_continue_sub">Здесь появятся видео, которые вы начали смотреть.</string>
+    <string name="empty_history">История пуста</string>
+    <string name="empty_history_sub">Здесь появятся просмотренные видео.</string>
+    <string name="clear_history_confirm">Очистить историю просмотров?</string>
+    <string name="clear_yes">Да, очистить всё</string>
+
+    <string name="profile_title">Профиль</string>
+    <string name="group_playback">Воспроизведение</string>
+    <string name="group_app">Приложение</string>
+    <string name="group_storage">Хранилище</string>
+    <string name="group_about">О приложении</string>
+    <string name="streaming_quality">Качество потока</string>
+    <string name="playback_speed">Скорость воспроизведения</string>
+    <string name="autoplay">Автовоспроизведение</string>
+    <string name="autoplay_sub">Автоматически включать следующий эпизод</string>
+    <string name="dark_mode">Тёмная тема</string>
+    <string name="dark_mode_sub">AMOLED тёмная тема</string>
+    <string name="notifications_setting">Уведомления</string>
+    <string name="notifications_setting_sub">Новинки и обновления</string>
+    <string name="language">Язык</string>
+    <string name="clear_history">Очистить историю</string>
+    <string name="clear_history_sub">Удалить всю историю</string>
+    <string name="clear_cache">Очистить кэш</string>
+    <string name="clear_cache_sub">Освободить место</string>
+    <string name="about_app">О TubeMe</string>
+    <string name="version">Версия 1.0.0</string>
+    <string name="footer_made">TubeMe v1.0.0 • Сделано с ♥</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="display_name">Отображаемое имя</string>
+    <string name="plan_premium">Premium</string>
+
+    <string name="video_not_found">Видео не найдено</string>
+    <string name="more_like_this">Похожее</string>
+    <string name="action_like">Нравится</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_share">Поделиться</string>
+
+    <string name="no_notifications">Пока нет уведомлений.</string>
+    <string name="notifications_title">🔔 Уведомления</string>
+</resources>
